@@ -6,64 +6,54 @@
     <title>Document</title>
 
 <style>
-
-    *{
+    * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        /* background-color: black; */
     }
-    body{
+
+    body {
         background-color: black;
     }
-        
+
     /* CSS for the menu bar */
-    .menu_bar{
-        height: 60px;
-        /* background-color: black; */
+    .menu_bar {
+            height: 60px;
+            background-color: black;
         }
-    ul.menu {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        /* background-color: #333; */
-        display: flex;
-        justify-content: center;
-        /* background-color: black; */
+    
+        ul.menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            /* background-color: #333; */
+            display: flex;
+            justify-content: center;
+            background-color: black;
         }
-        
-    ul.menu li {
-        float: left;
+    
+        ul.menu li {
+            float: left;
         }
-        
-    ul.menu li a {
-        display: block;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
+    
+        ul.menu li a {
+            box-sizing:border-box;
+            display: block;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
         }
-        
-    ul.menu li a:hover {
-        background: linear-gradient(
-        to right,
-        #7a53cd9f 20%,
-        #00affa 30%,
-        #0190cd6e 70%,
-        #754ada72 80%
-        );
-        border-radius: 50px;
+    
+        ul.menu li a:hover {
+            /* background-color: #c8adad; */
+            background: linear-gradient(to right, #7a53cd9f 20%, #00affa 30%, #0190cd6e 70%, #754ada72 80%);
+            border-radius: 50px;
         }
 
-    p{
+    p {
         margin-top: 100px;
-        background: linear-gradient(
-            to right,
-            #7953cd 20%,
-            #00affa 30%,
-            #0190cd 70%,
-            #764ada 80%
-        );
+        background: linear-gradient(to right, #7953cd 20%, #00affa 30%, #0190cd 70%, #764ada 80%);
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -71,18 +61,46 @@
         background-size: 500% auto;
         animation: textShine 5s ease-in-out infinite alternate;
         font-size: 1rem;
+    }
+
+    h1 {
+            background: linear-gradient(to right, #7953cd 20%, #00affa 30%, #0190cd 70%, #764ada 80%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-fill-color: transparent;
+            background-size: 500% auto;
+            animation: textShine 5s ease-in-out infinite alternate;
+            font-size: 1.5rem;
+            font-weight: bolder;
         }
 
-        @keyframes textShine {
-                0% {
-                background-position: 0% 50%;
-                }
-                100% {
-                background-position: 100% 50%;
-                }
+    @keyframes textShine {
+        0% {
+            background-position: 0% 50%;
         }
 
+        100% {
+            background-position: 100% 50%;
+        }
+    }
+
+    /* Responsive Styles */
+
+    @media (max-width: 768px) {
+        .menu_bar {
+            height: 80px;
+        }
+    }
+
+    @media (max-width: 576px) {
+        p {
+            font-size: 0.8rem;
+            margin-top: 50px;
+        }
+    }
 </style>
+
 
 </head>
 <body>
