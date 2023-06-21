@@ -6,5 +6,5 @@ first version : only available DESKTOP version
 if jou enjoy mohavarot and ramayan 
 go to browser menu and enable desktop mode.
 
-\n
+
 second version : support Desktop and mobile mode.
