@@ -1,6 +1,6 @@
 # Ramayan_and_Mohavarot_watch_online
 
-Website : https://pcb951.github.io/Ramayan_and_Mohavarot_watch_online/
+Link : https://pcb951.github.io/rm/
 
 first version : only available DESKTOP version
 if jou enjoy mohavarot and ramayan 
