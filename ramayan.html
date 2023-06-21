@@ -9,232 +9,158 @@
     <title>Mohavarot & Ramayana Bangla Episodes</title>
 
 
-<style>
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        background-color: black;
-    }
-
-    body {
-        background-color: black;
-    }
-
-    /* CSS for the menu bar */
-    .menu_bar {
-        height: 60px;
-        background-color: black;
-    }
-
-    ul.menu {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        /* background-color: #333; */
-        display: flex;
-        justify-content: center;
-        background-color: black;
-    }
-
-    ul.menu li {
-        float: left;
-    }
-
-    ul.menu li a {
-        display: block;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-    }
-
-    ul.menu li a:hover {
-        /* background-color: #c8adad; */
-        background: linear-gradient(to right, #7a53cd9f 20%, #00affa 30%, #0190cd6e 70%, #754ada72 80%);
-        border-radius: 50px;
-    }
-
-    .devider {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: center;
-        text-align: center;
-    }
-
-    .payer {
-        height: 80vh;
-        width: 60%;
-        padding: 30px;
-    }
-
-    .content_src {
-        width: 20%;
-        padding: 30px;
-        text-align: center;
-    }
-
-    h1 {
-        background: linear-gradient(to right, #7953cd 20%, #00affa 30%, #0190cd 70%, #764ada 80%);
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        text-fill-color: transparent;
-        background-size: 500% auto;
-        animation: textShine 5s ease-in-out infinite alternate;
-        font-size: 1.5rem;
-        font-weight: bolder;
-    }
-
-    .custom-button {
-        box-sizing: border-box;
-        width: 100%;
-        height: 80px;
-        margin-top: 5px;
-        padding: 5px;
-        background: linear-gradient(to right, #7953cd 20%, #00affa 30%, #0190cd 70%, #764ada 80%);
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        text-fill-color: transparent;
-        background-size: 500% auto;
-        animation: textShine 5s ease-in-out infinite alternate;
-        font-size: 1.5rem;
-        font-weight: bolder;
-        cursor: grab;
-    }
-
-    .custom-button:focus {
-        background: white;
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        text-fill-color: transparent;
-        background-size: 500% auto;
-        animation: textShine 5s ease-in-out infinite alternate;
-        font-size: 1.5rem;
-        font-weight: bolder;
-        cursor: grab;
-    }
-
-    #episode_name {
-        background: linear-gradient(to right, #4e00f7 20%, #9fd7ef 30%, #22627d 70%, #4c00ff 80%);
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        text-fill-color: transparent;
-        background-size: 500% auto;
-        animation: textShine 5s ease-in-out infinite alternate;
-        font-size: 1.5rem;
-        font-weight: bolder;
-    }
-
-    @keyframes textShine {
-        0% {
-            background-position: 0% 50%;
-        }
-
-        100% {
-            background-position: 100% 50%;
-        }
-    }
-
-    .advisitment-left {
-        width: 10%;
-        height: 80vh;
-        color: aliceblue;
-    }
-
-    .advisitment-right {
-        width: 10%;
-        height: 80vh;
-        color: aliceblue;
-    }
-
-    .advisitment-bottom {
-        height: 60px;
-        width: 50%;
-        margin: auto auto;
-        text-align: center;
-        color: aliceblue;
-    }
-
-    #buttonContainer {
-        box-sizing: border-box;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        overflow: scroll;
-        -ms-overflow-style: none;
-        /* IE and Edge */
-        scrollbar-width: none;
-        height: 70vh;
-        width: 100%;
-    }
-
-    #buttonContainer::-webkit-scrollbar {
-        display: none;
-    }
-
-    /* Responsive Styles */
-
-    @media (max-width: 768px) {
+    <style>
         * {
-            box-sizing: border-box;
             margin: 0;
             padding: 0;
-
+            box-sizing: border-box;
+            background-color: black;
         }
-
-        h1 {
-            font-size: .75rem;
+    
+        body {
+            background-color: black;
         }
-
+    
+        /* CSS for the menu bar */
         .menu_bar {
-            width: 80%;
             height: 60px;
             background-color: black;
         }
-
-        .advisitment-left {
-            display: none;
+    
+        ul.menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            /* background-color: #333; */
+            display: flex;
+            justify-content: center;
+            background-color: black;
         }
-
-        .payer {
-            width: 100%;
-            height: 30vh;
+    
+        ul.menu li {
+            float: left;
         }
-
-        .content_src {
-            width: 100%;
-            padding: 30px;
+    
+        ul.menu li a {
+            display: block;
             text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
         }
-
+    
+        ul.menu li a:hover {
+            /* background-color: #c8adad; */
+            background: linear-gradient(to right, #7a53cd9f 20%, #00affa 30%, #0190cd6e 70%, #754ada72 80%);
+            border-radius: 50px;
+        }
+    
         .devider {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             flex-wrap: nowrap;
             justify-content: center;
             text-align: center;
         }
-
-
-        .advisitment-left {
+    
+        .payer {
+            height: 80vh;
+            width: 60%;
+            padding: 30px;
+        }
+    
+        .content_src {
+            width: 20%;
+            padding: 30px;
+            text-align: center;
+        }
+    
+        h1 {
+            background: linear-gradient(to right, #7953cd 20%, #00affa 30%, #0190cd 70%, #764ada 80%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-fill-color: transparent;
+            background-size: 500% auto;
+            animation: textShine 5s ease-in-out infinite alternate;
+            font-size: 1.5rem;
+            font-weight: bolder;
+        }
+    
+        .custom-button {
+            box-sizing: border-box;
             width: 100%;
-            height: 5vh;
+            height: 80px;
+            margin-top: 5px;
+            padding: 5px;
+            background: linear-gradient(to right, #7953cd 20%, #00affa 30%, #0190cd 70%, #764ada 80%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-fill-color: transparent;
+            background-size: 500% auto;
+            animation: textShine 5s ease-in-out infinite alternate;
+            font-size: 1.5rem;
+            font-weight: bolder;
+            cursor: grab;
+        }
+    
+        .custom-button:focus {
+            background: white;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-fill-color: transparent;
+            background-size: 500% auto;
+            animation: textShine 5s ease-in-out infinite alternate;
+            font-size: 1.5rem;
+            font-weight: bolder;
+            cursor: grab;
+        }
+    
+        #episode_name {
+            background: linear-gradient(to right, #4e00f7 20%, #9fd7ef 30%, #22627d 70%, #4c00ff 80%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-fill-color: transparent;
+            background-size: 500% auto;
+            animation: textShine 5s ease-in-out infinite alternate;
+            font-size: 1.5rem;
+            font-weight: bolder;
+        }
+    
+        @keyframes textShine {
+            0% {
+                background-position: 0% 50%;
+            }
+    
+            100% {
+                background-position: 100% 50%;
+            }
+        }
+    
+        .advisitment-left {
+            width: 10%;
+            height: 80vh;
+            color: aliceblue;
+        }
+    
+        .advisitment-right {
+            width: 10%;
+            height: 80vh;
+            color: aliceblue;
+        }
+    
+        .advisitment-bottom {
+            height: 60px;
+            width: 50%;
+            margin: auto auto;
             text-align: center;
             color: aliceblue;
         }
-
-        .advisitment-right {
-            display: none;
-        }
-
-
+    
         #buttonContainer {
-            margin-top: 40vh;
             box-sizing: border-box;
             display: flex;
             flex-direction: column;
@@ -243,74 +169,189 @@
             -ms-overflow-style: none;
             /* IE and Edge */
             scrollbar-width: none;
-            height: 60vh;
+            height: 70vh;
             width: 100%;
         }
-
-    }
-
-    @media (max-width: 576px) {
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-
-        }
-
-        h1 {
-            font-size: .75rem;
-        }
-
-        .menu_bar {
-            width: 100%;
-            height: 60px;
-            background-color: black;
-        }
-
-        .advisitment-left {
+    
+        #buttonContainer::-webkit-scrollbar {
             display: none;
         }
-
-        .payer {
-            width: 100%;
-            height: 30vh;
+    
+        /* Responsive Styles */
+    
+        @media (max-width: 768px) {
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+    
+            }
+    
+            h1 {
+                font-size: .75rem;
+            }
+    
+            .menu_bar {
+                height: 30px;
+                background-color: black;
+            }
+    
+            ul.menu {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                /* background-color: #333; */
+                display: flex;
+                justify-content: center;
+                background-color: black;
+            }
+    
+            ul.menu li {
+                float: left;
+            }
+    
+            ul.menu li a {
+                display: block;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+    
+    
+    
+            .advisitment-left {
+                display: none;
+            }
+    
+            .payer {
+                width: 100%;
+                height: 30vh;
+            }
+    
+            .content_src {
+                width: 100%;
+                padding: 30px;
+                text-align: center;
+            }
+    
+            .devider {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                justify-content: center;
+                text-align: center;
+            }
+    
+    
+            .advisitment-left {
+                display: none;
+            }
+    
+            .advisitment-right {
+                display: none;
+            }
+    
+    
+            #buttonContainer {
+                margin-top: 40vh;
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                overflow: scroll;
+                -ms-overflow-style: none;
+                /* IE and Edge */
+                scrollbar-width: none;
+                height: 60vh;
+                width: 100%;
+            }
+    
         }
-
-        .content_src {
-            width: 100%;
-            padding: 30px;
-            text-align: center;
+    
+        @media (max-width: 576px) {
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+    
+            }
+    
+            h1 {
+                font-size: .75rem;
+            }
+    
+            .menu_bar {
+                height: 30px;
+                background-color: black;
+            }
+    
+            ul.menu {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                /* background-color: #333; */
+                display: flex;
+                justify-content: center;
+                background-color: black;
+            }
+    
+            ul.menu li {
+                float: left;
+            }
+    
+            ul.menu li a {
+                display: block;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+    
+            .advisitment-left {
+                display: none;
+            }
+    
+            .payer {
+                width: 100%;
+                height: 30vh;
+            }
+    
+            .content_src {
+                width: 100%;
+                padding: 30px;
+                text-align: center;
+            }
+    
+            .devider {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                justify-content: center;
+                text-align: center;
+            }
+    
+            .advisitment-right {
+                display: none;
+            }
+    
+    
+            #buttonContainer {
+                margin-top: 40vh;
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                overflow: scroll;
+                -ms-overflow-style: none;
+                /* IE and Edge */
+                scrollbar-width: none;
+                height: 60vh;
+                width: 100%;
+            }
+    
         }
-
-        .devider {
-            display: flex;
-            flex-direction: column;
-            flex-wrap: nowrap;
-            justify-content: center;
-            text-align: center;
-        }
-
-        .advisitment-right {
-            display: none;
-        }
-
-
-        #buttonContainer {
-            margin-top: 40vh;
-            box-sizing: border-box;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: nowrap;
-            overflow: scroll;
-            -ms-overflow-style: none;
-            /* IE and Edge */
-            scrollbar-width: none;
-            height: 60vh;
-            width: 100%;
-        }
-
-    }
-</style>
+    </style>
 
 
 </head>
@@ -337,9 +378,9 @@
 <div class="devider">
 
     <!-- left_advisement -->
-
     <div class="advisitment-left">
-        <p>left_advisement</p>
+
+
     </div>
 
     <!-- here set ifream value and positioning -->
@@ -371,19 +412,21 @@
         </div>
     </div>
 
-    <!-- right_advisement -->
 
+
+    
+    <!-- right_advisement -->
     <div class="advisitment-right">
-        <p>right_advisement</p>
+
+        
     </div>
 
 </div>
 
 
 <!-- bottom_advisement -->
-
 <div class="advisitment-bottom">
-    <p>bottom_advisement</p>
+
 </div>
 
 
